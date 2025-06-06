@@ -1,0 +1,104 @@
+{
+  "screenTitle": "Customer Master",
+  "panels": [
+    {
+      "id": "customerDetails",
+      "title": "Basic Information",
+      "layout": {
+        "width": 50,
+        "row": 1,
+        "order": 1
+      },
+      "fields": [
+        { "id": "code", "label": "Customer Code", "visible": true, "tabOrder": 1, "type": "text", "required": true },
+        { "id": "name", "label": "Customer Name", "visible": true, "tabOrder": 2, "type": "text", "required": true },
+        { "id": "customerType", "label": "Customer Type", "visible": true, "tabOrder": 3, "type": "select", "options": ["Individual", "Company", "Government"], "required": true },
+        { "id": "status", "label": "Status", "visible": true, "tabOrder": 4, "type": "select", "options": ["Active", "Inactive", "Blocked"], "required": true },
+        { "id": "registrationDate", "label": "Registration Date", "visible": true, "tabOrder": 5, "type": "date", "required": true }
+      ]
+    },
+    {
+      "id": "contactDetails",
+      "title": "Contact Information",
+      "layout": {
+        "width": 50,
+        "row": 1,
+        "order": 2
+      },
+      "fields": [
+        { "id": "primaryContact", "label": "Primary Contact Person", "visible": true, "tabOrder": 6, "type": "text" },
+        { "id": "email", "label": "Email", "visible": true, "tabOrder": 7, "type": "text", "validation": "email" },
+        { "id": "phone", "label": "Phone", "visible": true, "tabOrder": 8, "type": "text" },
+        { "id": "mobile", "label": "Mobile", "visible": true, "tabOrder": 9, "type": "text" },
+        { "id": "website", "label": "Website", "visible": true, "tabOrder": 10, "type": "text" }
+      ]
+    },
+    {
+      "id": "addressDetails",
+      "title": "Address Information",
+      "layout": {
+        "width": 100,
+        "row": 2,
+        "order": 1
+      },
+      "fields": [
+        { "id": "billingAddress", "label": "Billing Address", "visible": true, "tabOrder": 11, "type": "textarea" },
+        { "id": "billingCity", "label": "City", "visible": true, "tabOrder": 12, "type": "text" },
+        { "id": "billingState", "label": "State", "visible": true, "tabOrder": 13, "type": "text" },
+        { "id": "billingCountry", "label": "Country", "visible": true, "tabOrder": 14, "type": "text" },
+        { "id": "billingPincode", "label": "Pincode", "visible": true, "tabOrder": 15, "type": "text" },
+        { "id": "shippingAddress", "label": "Shipping Address", "visible": true, "tabOrder": 16, "type": "textarea" },
+        { "id": "shippingCity", "label": "City", "visible": true, "tabOrder": 17, "type": "text" },
+        { "id": "shippingState", "label": "State", "visible": true, "tabOrder": 18, "type": "text" },
+        { "id": "shippingCountry", "label": "Country", "visible": true, "tabOrder": 19, "type": "text" },
+        { "id": "shippingPincode", "label": "Pincode", "visible": true, "tabOrder": 20, "type": "text" }
+      ]
+    },
+    {
+      "id": "financialDetails",
+      "title": "Financial Information",
+      "layout": {
+        "width": 50,
+        "row": 3,
+        "order": 1
+      },
+      "fields": [
+        { "id": "creditLimit", "label": "Credit Limit", "visible": true, "tabOrder": 21, "type": "number", "format": "currency" },
+        { "id": "paymentTerms", "label": "Payment Terms", "visible": true, "tabOrder": 22, "type": "select", "options": ["Immediate", "Net 15", "Net 30", "Net 45", "Net 60"] },
+        { "id": "taxRegistrationNumber", "label": "Tax Registration Number", "visible": true, "tabOrder": 23, "type": "text" },
+        { "id": "taxExemptionNumber", "label": "Tax Exemption Number", "visible": true, "tabOrder": 24, "type": "text" },
+        { "id": "currency", "label": "Default Currency", "visible": true, "tabOrder": 25, "type": "select", "options": ["USD", "EUR", "GBP", "INR"] }
+      ]
+    },
+    {
+      "id": "additionalDetails",
+      "title": "Additional Information",
+      "layout": {
+        "width": 25,
+        "row": 3,
+        "order": 2
+      },
+      "fields": [
+        { "id": "industry", "label": "Industry", "visible": true, "tabOrder": 26, "type": "select", "options": ["Manufacturing", "Retail", "Services", "Technology", "Healthcare", "Other"] },
+        { "id": "customerSegment", "label": "Customer Segment", "visible": true, "tabOrder": 27, "type": "select", "options": ["Premium", "Standard", "Basic"] },
+        { "id": "salesPerson", "label": "Sales Person", "visible": true, "tabOrder": 28, "type": "text" },
+        { "id": "notes", "label": "Notes", "visible": true, "tabOrder": 29, "type": "textarea" }
+      ]
+    },
+    {
+      "id": "additionalDetails 2",
+      "title": "Additional Information 2",
+      "layout": {
+        "width": 25,
+        "row": 3,
+        "order": 2
+      },
+      "fields": [
+        { "id": "industry", "label": "Industry", "visible": true, "tabOrder": 26, "type": "select", "options": ["Manufacturing", "Retail", "Services", "Technology", "Healthcare", "Other"] },
+        { "id": "customerSegment", "label": "Customer Segment", "visible": true, "tabOrder": 27, "type": "select", "options": ["Premium", "Standard", "Basic"] },
+        { "id": "salesPerson", "label": "Sales Person", "visible": true, "tabOrder": 28, "type": "text" },
+        { "id": "notes", "label": "Notes", "visible": true, "tabOrder": 29, "type": "textarea" }
+      ]
+    }
+  ]
+} 
